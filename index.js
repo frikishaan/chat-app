@@ -7,6 +7,11 @@ const PORT = process.env.PORT || 5000;
 
 const users = {};
 
+io.configure(function() {
+  io.set("transports", ["xhr-polling"]);
+  io.set("polling duration", 10);
+});
+
 io.on("connection", function(socket, msg) {
   // Connected event
 
