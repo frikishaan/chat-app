@@ -1,7 +1,4 @@
-// const express = require("express");
-// const app = express()();
-// const io = require("socket.io").listen(app);
-var express = require("express"),
+const express = require("express"),
   app = express(),
   server = require("http").createServer(app),
   io = require("socket.io").listen(server);
@@ -10,11 +7,6 @@ var express = require("express"),
 // const PORT = process.env.PORT || 5000;
 
 const users = {};
-
-// io.configure(function() {
-//   io.set("transports", ["xhr-polling"]);
-//   io.set("polling duration", 10);
-// });
 
 io.sockets.on("connection", function(socket, msg) {
   // Connected event
