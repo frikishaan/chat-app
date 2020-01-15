@@ -1,9 +1,14 @@
-const express = require("express");
-const app = express()();
-const io = require("socket.io").listen(app);
+// const express = require("express");
+// const app = express()();
+// const io = require("socket.io").listen(app);
+var express = require("express"),
+  app = express(),
+  server = require("http").createServer(app),
+  io = require("socket.io").listen(server);
 
+server.listen(process.env.PORT || 3000);
 // PORT number
-const PORT = process.env.PORT || 5000;
+// const PORT = process.env.PORT || 5000;
 
 const users = {};
 
@@ -31,4 +36,4 @@ io.on("connection", function(socket, msg) {
   });
 });
 
-app.listen(PORT);
+// app.listen(PORT);
