@@ -36,4 +36,4 @@ io.sockets.on("connection", function(socket, msg) {
 });
 
 // app.listen(PORT);
-server.listen(process.env.PORT || 3000);
+server.listen(process.env.PORT || 8000);
