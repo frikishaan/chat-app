@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chat App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/main.css" />
+  </head>
+  <body>
+    <!-- Main container -->
+    <div class="container">
+      <div class="messages">
+        <!-- <div class="received">Hey</div>
+        <div class="sent">Hey , I'm fine</div>
+        <div class="received">Hey how are you?</div>
+        <div class="received">Hey how are you?</div>
+        <div class="sent">Hey , I'm fine</div>
+        <div class="sent">Hey , I'm fine</div>
+        <div class="sent">Hey , I'm fine</div>
+        <div class="received">Hey how are you?</div>
+        <div class="sent">Hey , I'm fine</div>
+        <div class="sent">Hey , I'm fine</div>
+        <div class="received">Hey how are you?</div> -->
+      </div>
+      <form id="send-message">
+        <input
+          type="text"
+          id="message"
+          placeholder="Enter your message..."
+          autocomplete="off"
+        />
+        <button type="submit"><i class="fa fa-send"></i></button>
+      </form>
+    </div>
+
+    <div class="toast">Hey, I'm here at the Top-right</div>
+
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script src="assets/client.js" defer></script>
+  </body>
+</html>
