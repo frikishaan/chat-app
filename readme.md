@@ -2,7 +2,7 @@
 
 The app is a part of my **#30Days30Projects challenge**. The app have a nice UI which shows a notification on user joined and leaved event. Multiple users can join the chat at a time.
 
-The public folder contains the client side stuff while the server side code is in `index.js` file.
+The public folder contains the client side stuff while the server side code is in `index.js` file. The demo is available [here](https://codepen.io/sheikh_ishaan/full/vYEazXa)
 
 ## Usage
 
@@ -12,7 +12,7 @@ The public folder contains the client side stuff while the server side code is i
 
 - Install dependencies
     
-   npm install
+       npm install
 
 - Run socket.io server
 
