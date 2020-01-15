@@ -16,7 +16,7 @@ const users = {};
 //   io.set("polling duration", 10);
 // });
 
-io.on("connection", function(socket, msg) {
+io.sockets.on("connection", function(socket, msg) {
   // Connected event
 
   socket.on("connected", function(name) {
