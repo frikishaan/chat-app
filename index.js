@@ -6,7 +6,6 @@ var express = require("express"),
   server = require("http").createServer(app),
   io = require("socket.io").listen(server);
 
-server.listen(process.env.PORT || 3000);
 // PORT number
 // const PORT = process.env.PORT || 5000;
 
@@ -37,3 +36,4 @@ io.on("connection", function(socket, msg) {
 });
 
 // app.listen(PORT);
+server.listen(process.env.PORT || 3000);
