@@ -4,6 +4,7 @@
   "description": "A simple Chat App using socket.io",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "dev": "nodemon index"
   },
   "author": "Ishaan Sheikh",
